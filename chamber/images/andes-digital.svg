@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480">
+<rect width="800" height="480" fill="#eef1f2"/>
+<rect x="35" y="35" width="730" height="410" rx="20" fill="#24556b"/>
+<circle cx="400" cy="185" r="78" fill="white"/>
+<text x="400" y="213" text-anchor="middle" font-family="Arial,sans-serif" font-size="55" font-weight="700" fill="#24556b">ADS</text>
+<text x="400" y="330" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="white">Andes Digital Solutions</text>
+<text x="400" y="375" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="white">CHAMBER MEMBER</text>
+</svg>

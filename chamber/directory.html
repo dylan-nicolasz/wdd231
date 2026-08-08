@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Directory | Quito Chamber of Commerce</title>
+    <meta name="description" content="Find local businesses and chamber members in Quito through the Quito Chamber of Commerce business directory.">
+    <meta name="author" content="Dylan Zurita">
+
+    <meta property="og:title" content="Quito Chamber of Commerce | Business Directory">
+    <meta property="og:description" content="Explore local businesses and chamber members in Quito.">
+    <meta property="og:image" content="images/chamber-social.svg">
+    <meta property="og:url" content="https://dylan-nicolasz.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Quito Chamber of Commerce home">
+            <img src="images/favicon.svg" alt="favicon-chamber" width="50" height="50">
+            <span>
+                <strong>Quito Chamber</strong>
+                <small>of Commerce</small>
+            </span>
+        </a>
+
+        <button id="menu-button" class="menu-button" type="button"
+            aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <button id="theme-button" class="theme-button" type="button"
+            aria-label="Toggle color theme" title="Toggle color theme">
+            ◐
+        </button>
+
+        <nav id="primary-nav" class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html" class="active" aria-current="page">Business Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <h1>Directory</h1>
+        </section>
+
+        <section class="directory-controls" aria-label="Directory display controls">
+            <button id="grid-view" class="view-button active" type="button" aria-pressed="true">
+                Grid
+            </button>
+            <button id="list-view" class="view-button" type="button" aria-pressed="false">
+                List
+            </button>
+        </section>
+
+        <section id="members" class="members grid-view" aria-label="Chamber member businesses" aria-live="polite">
+            <p class="loading">Loading chamber members...</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <section>
+                <h2>Quito Chamber of Commerce</h2>
+                <address>
+                    Av. República 123<br>
+                    Quito, Ecuador<br>
+                    info@quitochamber.example<br>
+                    +593 2 555-0182
+                </address>
+            </section>
+
+            <div class="social-links" aria-label="Social media links">
+                <a href="#" aria-label="YouTube">▶</a>
+                <a href="#" aria-label="X / Twitter">𝕏</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+            </div>
+
+            <section>
+                <h2>WDD231 Class Project</h2>
+                <p>Dylan Zurita</p>
+                <p>© <span id="current-year"></span> Quito Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

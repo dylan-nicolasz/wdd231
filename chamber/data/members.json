@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Andes Digital Solutions",
+        "tagline": "Digital Marketing & Technology",
+        "email": "info@andesdigital.example",
+        "phone": "+593 2 555-1001",
+        "website": "https://example.com/andes-digital",
+        "image": "andes-digital.svg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Pichincha Coffee Co.",
+        "tagline": "Ecuadorian Coffee & Retail",
+        "email": "info@pichinchacoffee.example",
+        "phone": "+593 2 555-1002",
+        "website": "https://example.com/pichincha-coffee",
+        "image": "pichincha-coffee.svg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Capital Accounting Group",
+        "tagline": "Accounting & Business Services",
+        "email": "hello@capitalaccounting.example",
+        "phone": "+593 2 555-1003",
+        "website": "https://example.com/capital-accounting",
+        "image": "capital-accounting.svg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Quito Creative Studio",
+        "tagline": "Branding & Creative Services",
+        "email": "hello@quitocreative.example",
+        "phone": "+593 2 555-1004",
+        "website": "https://example.com/quito-creative",
+        "image": "quito-creative.svg",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Sierra Logistics",
+        "tagline": "Transportation & Logistics",
+        "email": "info@sierralogistics.example",
+        "phone": "+593 2 555-1005",
+        "website": "https://example.com/sierra-logistics",
+        "image": "sierra-logistics.svg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Metropolitan Fitness",
+        "tagline": "Fitness & Wellness",
+        "email": "hello@metropolitanfitness.example",
+        "phone": "+593 2 555-1006",
+        "website": "https://example.com/metropolitan-fitness",
+        "image": "metropolitan-fitness.svg",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Volcano Legal Advisors",
+        "tagline": "Business Legal Services",
+        "email": "info@volcanolegal.example",
+        "phone": "+593 2 555-1007",
+        "website": "https://example.com/volcano-legal",
+        "image": "volcano-legal.svg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Andean Market",
+        "tagline": "Local Food & Retail",
+        "email": "hello@andeanmarket.example",
+        "phone": "+593 2 555-1008",
+        "website": "https://example.com/andean-market",
+        "image": "andean-market.svg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Quito Business Consulting",
+        "tagline": "Business Strategy & Consulting",
+        "email": "info@quitoconsulting.example",
+        "phone": "+593 2 555-1009",
+        "website": "https://example.com/quito-consulting",
+        "image": "quito-consulting.svg",
+        "membershipLevel": 1
+    }
+]

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dylan Zurita">
+    <meta name="description" content="I'm Dylan Zurita and this is a page I created to introduce myself and my interests."> 
+    <meta property="og:title" content="About Me (Dylan Zurita)">
+    <meta property="og:description" content="I created this page as an introduction of me, where I live, my studies, and my projects, everyone is welcome to check the page and to check my sites.">
+    <meta property="og:image" content="">
+    <title>WDD 231 – Web Frontend Development 1 – Dylan Zurita</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+<header>
+    <span id="course-title">Dylan Zurita</span>
+
+        <img src="images/logo-index.png" alt="me-logo">
+        <button id="menu-btn" aria-label="Menu"> ☰ </button>
+
+        <nav>
+            <ul class="navigation">
+                <li> <a href="" title="Home">Home</a></li>
+                <li> <a href="" title="Canvas">Chamber Project </a></li>
+                <li> <a href="" title="Scripture">Final Project</a></li>
+            </ul>
+        </nav>
+</header>
+
+    <main>
+    <h1 class="name">Home</h1>
+    <div class="cards-container">
+        <section class="card">
+            <h2 class="about-me">About Me</h2>
+
+            <p>I'm Dylan. I was born and raised in Ecuador. I love my country and the food.
+            Right now I'm a student at BYUI, pursuing a carreer in software development.
+            I love playing the guitar and playing ping pong.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2 class="web-dev"> Student Photo</h2>
+            <img src="images/me-dylan.jpg" alt="Me">
+        </section>
+
+        <section>
+            <h2 class="courses-card">Web Certificate Courses</h2>
+            <a id="bookbtn" href="book.html" title="All">All</a>
+            <a id="bookbtn" href="book.html" title="WDD">WDD</a>
+            <a id="bookbtn" href="book.html" title="CSE">cse</a>
+        </section>
+    </div>
+</main>
+
+<footer>
+
+    <section>
+        <a href="https://www.linkedin.com/in/dylan-zurita-8985153b8/">
+            <img src="images/in-logo.jpg" alt="linkedin">
+        </a>
+        <a href="https://github.com/dylan-nicolasz">
+            <img src="images/git-logo.png" alt="github">
+        </a>
+        <a href="https://dylan-nicolasz.github.io/wdd131/project/main.html">
+            <img src="images/profbook.avif" alt="profbook-page">
+        </a>
+    </section>
+    <p>
+        &copy; <span id="year"></span>- Dylan Zurita - Quito-Ecuador
+    </p>
+    <p id="last-modified"></p>
+</footer>
+</body>
+</html>
