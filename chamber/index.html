@@ -1,35 +1,134 @@
 <!DOCTYPE html>
-<htmld lang="en">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home | Quito Chamber of Commerce</title>
-<meta name="description" content="Home page for the Quito Chamber of Commerce.">
-<meta name="author" content="Dylan Zurita">
-<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/small.css">
-<link rel="stylesheet" href="styles/larger.css">
-<script defer src="scripts/directory.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | Quito Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the Quito Chamber of Commerce. Promoting local business growth, networking events, and economic support in Quito, Ecuador.">
+    <meta name="author" content="Dylan Zurita">
+
+    <meta property="og:title" content="Quito Chamber of Commerce | Home">
+    <meta property="og:description" content="Connecting businesses and communities across Quito. Explore local events, member spotlights, and weather forecasts.">
+    <meta property="og:image" content="https://dylan-nicolasz.github.io/wdd231/chamber/images/chamber-social.svg">
+    <meta property="og:url" content="https://dylan-nicolasz.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/home-normalize.css">
+    <link rel="stylesheet" href="styles/home-small.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/index.js" defer></script>
 </head>
+
 <body>
-<header class="site-header">
-<a class="brand" href="index.html"><img src="images/favicon.svg" alt="" width="50" height="50"><span><strong>Quito Chamber</strong><small>of Commerce</small></span></a>
-<button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
-<button id="theme-button" class="theme-button" type="button" aria-label="Toggle color theme">◐</button>
-<nav id="primary-nav" class="site-nav" aria-label="Main navigation"><a href="index.html" class="active" aria-current="page">Home</a>
-<a href="discover.html">Discover</a>
-<a href="directory.html">Business Directory</a>
-<a href="join.html">Join</a>
-</header>
-<main>
-<section class="page-heading"><h1>Home</h1></section>
-<section class="member-card"><div class="member-content"><p>This page is reserved for the next project assignment.</p></div></section>
-</main>
-<footer class="site-footer"><div class="footer-content">
-<section><h2>Quito Chamber of Commerce</h2><address>Av. República 123<br>Quito, Ecuador<br>info@quitochamber.example<br>+593 2 555-0182</address></section>
-<div class="social-links"><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="X / Twitter">𝕏</a><a href="#" aria-label="LinkedIn">in</a></div>
-<section><h2>WDD231 Class Project</h2><p>Dylan Zurita</p><p>© <span id="current-year"></span> Quito Chamber of Commerce</p><p>Last Modification: <span id="last-modified"></span></p></section>
-</div></footer>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Quito Chamber of Commerce home">
+            <img src="images/favicon.svg" alt="favicon-chamber" width="50" height="50">
+            <span>
+                <strong>Quito Chamber</strong>
+                <small>of Commerce</small>
+            </span>
+        </a>
+
+        <button id="menu-button" class="menu-button" type="button"
+            aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <button id="theme-button" class="theme-button" type="button"
+            aria-label="Toggle color theme" title="Toggle color theme">
+            ◐
+        </button>
+
+        <nav id="primary-nav" class="site-nav" aria-label="Main navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Business Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero-section" aria-label="Welcome banner">
+            <img src="images/quito-hero2.webp" alt="Quito landscape overview" class="hero-image" width="1200" height="500" loading="eager">
+            <div class="hero-cta">
+                <h2>Grow Your Business With Us</h2>
+                <p>Connect with Quito’s leading professionals and business community.</p>
+                <a href="join.html" class="cta-button">Join the Chamber Today</a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+            <section class="events-section" aria-label="Current events">
+                <h2>Current Events</h2>
+                <article class="event-card">
+                    <h3>Quito Business Summit 2026</h3>
+                    <p><strong>Date:</strong> November 14, 2026</p>
+                    <p>Join over 300 regional business leaders for networking and workshops.</p>
+                </article>
+                <article class="event-card">
+                    <h3>Small Business Tech Workshop</h3>
+                    <p><strong>Date:</strong> December 5, 2026</p>
+                    <p>Learn actionable strategies to leverage AI and digital marketing for growth.</p>
+                </article>
+            </section>
+
+            <section class="weather-section" aria-label="Local weather information">
+                <h2>Weather in Quito</h2>
+                <div class="weather-current">
+                    <img id="weather-icon" src="" alt="" width="50" height="50">
+                    <span id="current-temp">--°C</span>
+                    <p id="weather-desc" class="weather-desc">Loading weather...</p>
+                </div>
+                <div class="weather-forecast">
+                    <h3>3-Day Forecast</h3>
+                    <div id="forecast-container" class="forecast-container"></div>
+                </div>
+            </section>
+        </div>
+
+        <section class="spotlight-section" aria-label="Member spotlights">
+            <h2>Member Spotlights</h2>
+            <h4>Pichincha Coffee Co.</h4>
+            <p><strong>News:</strong> Pichincha Coffe Co. has earned the silver member badge.</p>
+            <p>The company has grow exponentally in the last 3 months, their food and beverage cost percentage is 35%</p>
+            <div id="spotlight-grid" class="spotlight-grid">
+                <p class="loading">Loading spotlights...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <section>
+                <h2>Quito Chamber of Commerce</h2>
+                <address>
+                    Av. República 123<br>
+                    Quito, Ecuador<br>
+                    info@quitochamber.example<br>
+                    +593 2 555-0182
+                </address>
+            </section>
+
+            <div class="social-links">
+                <a href="#" aria-label="YouTube">▶</a>
+                <a href="#" aria-label="X / Twitter">𝕏</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+            </div>
+
+            <section>
+                <h2>WDD231 Class Project</h2>
+                <p>Dylan Zurita</p>
+                <p>© <span id="current-year"></span> Quito Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>

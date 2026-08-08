@@ -1,0 +1,366 @@
+:root {
+    --primary: #24556b;
+    --primary-dark: #173c4c;
+    --secondary: #e5aa3b;
+    --background: #f6f7f8;
+    --surface: #ffffff;
+    --text: #202a30;
+    --muted: #5f6c73;
+    --border: #d6dde1;
+    --header-bg: #e8eaec;
+    --footer-bg: #e1e4e6;
+    --shadow: 0 3px 12px rgba(32, 42, 48, 0.10);
+}
+
+body {
+    min-width: 320px;
+    background: var(--background);
+    color: var(--text);
+    font-family: "Open Sans", sans-serif;
+}
+
+body.dark-theme {
+    --background: #182329;
+    --surface: #23323a;
+    --text: #f3f6f7;
+    --muted: #c6d0d5;
+    --border: #46555d;
+    --header-bg: #202e35;
+    --footer-bg: #202e35;
+}
+
+/* Header & Navigation */
+.site-header {
+    min-height: 70px;
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    line-height: 1.05;
+}
+
+.brand img {
+    width: 42px;
+    height: 42px;
+}
+
+.brand span {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand strong {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.brand small {
+    font-size: 0.95rem;
+}
+
+.menu-button,
+.theme-button {
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    min-width: 42px;
+    min-height: 42px;
+    font-size: 1.7rem;
+}
+
+.theme-button {
+    font-size: 1.8rem;
+}
+
+.site-nav {
+    grid-column: 1 / -1;
+    display: none;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding-top: 0.5rem;
+}
+
+.site-nav.open {
+    display: flex;
+}
+
+.site-nav a {
+    padding: 0.65rem 0.7rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+    background: var(--secondary);
+    color: #17232a;
+}
+
+/* Main Layout */
+main.home-main {
+    width: min(100% - 2rem, 1200px);
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+}
+
+/* Hero & CTA */
+.hero-section {
+    position: relative;
+    margin-bottom: 1.5rem;
+    border-radius: 0.55rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.hero-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.hero-cta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.2rem;
+    background: linear-gradient(transparent, rgba(23, 60, 76, 0.95));
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-cta h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+}
+
+.hero-cta p {
+    font-size: 0.85rem;
+    margin: 0.3rem 0 0.8rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: var(--secondary);
+    color: #17232a;
+    font-weight: 700;
+    border-radius: 0.3rem;
+}
+
+.cta-button:hover {
+    background: #f5bc4e;
+}
+
+/* Cards & Sections */
+.events-section,
+.weather-section,
+.spotlight-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.55rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.events-section h2,
+.weather-section h2,
+.spotlight-section h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    color: var(--text);
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.event-card {
+    margin-bottom: 0.8rem;
+}
+
+.event-card h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.event-card p {
+    font-size: 0.82rem;
+    margin: 0.2rem 0;
+}
+
+/* Weather Elements */
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+#current-temp {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.weather-desc {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.weather-forecast h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+}
+
+.forecast-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.forecast-card {
+    flex: 1;
+    background: var(--header-bg);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    font-size: 0.82rem;
+}
+
+.forecast-card span {
+    display: block;
+    font-weight: 700;
+}
+
+/* Member Spotlights */
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.member-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.55rem;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.member-card img {
+    width: 100%;
+    height: 145px;
+    object-fit: contain;
+    background: #edf0f2;
+    padding: 1rem;
+}
+
+.member-content {
+    padding: 0.8rem 1rem 1rem;
+}
+
+.member-content h3 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--text);
+    font-size: 1.15rem;
+    text-align: center;
+    margin-bottom: 0.1rem;
+}
+
+.member-tagline {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.78rem;
+    padding-bottom: 0.55rem;
+    margin-bottom: 0.65rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.member-content p {
+    font-size: 0.82rem;
+    margin: 0.28rem 0;
+}
+
+.member-content a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.member-level {
+    display: inline-block;
+    margin-top: 0.4rem;
+    padding: 0.2rem 0.45rem;
+    border-radius: 999px;
+    background: #e8f1f4;
+    color: var(--primary-dark);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: var(--muted);
+}
+
+/* Footer */
+.site-footer {
+    background: var(--footer-bg);
+    border-top: 1px solid var(--border);
+}
+
+.footer-content {
+    width: min(100% - 2rem, 1200px);
+    margin: 0 auto;
+    padding: 1.2rem 0;
+    display: grid;
+    gap: 1.2rem;
+}
+
+.site-footer h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.site-footer p,
+.site-footer address {
+    color: var(--text);
+    font-size: 0.82rem;
+    font-style: normal;
+    line-height: 1.55;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.social-links a {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #6c7276;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.social-links a:hover {
+    background: var(--primary);
+}
