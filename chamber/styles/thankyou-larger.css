@@ -1,0 +1,23 @@
+@media (min-width: 640px) {
+    .menu-button {
+        display: none;
+    }
+
+    .site-nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        gap: 0.5rem;
+    }
+
+    .site-nav a {
+        border-top: none;
+        border-radius: 0.25rem;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

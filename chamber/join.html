@@ -1,36 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Join | Quito Chamber of Commerce</title>
-<meta name="description" content="Join page for the Quito Chamber of Commerce.">
-<meta name="author" content="Dylan Zurita">
-<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/small.css">
-<link rel="stylesheet" href="styles/larger.css">
-<script defer src="scripts/directory.js"></script>
-</head>
-<body>
-<header class="site-header">
-<a class="brand" href="index.html"><img src="images/favicon.svg" alt="" width="50" height="50"><span><strong>Quito Chamber</strong><small>of Commerce</small></span></a>
-<button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
-<button id="theme-button" class="theme-button" type="button" aria-label="Toggle color theme">◐</button>
-<nav id="primary-nav" class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a>
-<a href="discover.html">Discover</a>
-<a href="directory.html">Business Directory</a>
-<a href="join.html" class="active" aria-current="page">Join</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</header>
-<main>
-<section class="page-heading"><h1>Join</h1></section>
-<section class="member-card"><div class="member-content"><p>This page is reserved for the next project assignment.</p></div></section>
-</main>
-<footer class="site-footer"><div class="footer-content">
-<section><h2>Quito Chamber of Commerce</h2><address>Av. República 123<br>Quito, Ecuador<br>info@quitochamber.example<br>+593 2 555-0182</address></section>
-<div class="social-links"><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="X / Twitter">𝕏</a><a href="#" aria-label="LinkedIn">in</a></div>
-<section><h2>WDD231 Class Project</h2><p>Dylan Zurita</p><p>© <span id="current-year"></span> Quito Chamber of Commerce</p><p>Last Modification: <span id="last-modified"></span></p></section>
-</div></footer>
+    <title>Join | Quito Chamber of Commerce</title>
+    <meta name="description" content="Join the Quito Chamber of Commerce to connect with local businesses, gain marketing visibility, and grow your organization.">
+    <meta name="author" content="Dylan Zurita">
+
+    <meta property="og:title" content="Quito Chamber of Commerce | Join Us">
+    <meta property="og:description" content="Apply for Quito Chamber of Commerce membership. Select from Non-Profit, Bronze, Silver, or Gold tiers.">
+    <meta property="og:image" content="https://dylan-nicolasz.github.io/wdd231/chamber/images/chamber-social.svg">
+    <meta property="og:url" content="https://dylan-nicolasz.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/join-small.css">
+    <link rel="stylesheet" href="styles/join-larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Quito Chamber of Commerce home">
+            <img src="images/favicon.svg" alt="favicon-chamber" width="50" height="50">
+            <span>
+                <strong>Quito Chamber</strong>
+                <small>of Commerce</small>
+            </span>
+        </a>
+
+        <button id="menu-button" class="menu-button" type="button"
+            aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav id="primary-nav" class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Business Directory</a>
+            <a href="join.html" class="active" aria-current="page">Join</a>
+        </nav>
+
+        <button id="theme-button" class="theme-button" type="button"
+            aria-label="Toggle color theme" title="Toggle color theme">
+            ◐
+        </button>
+    </header>
+
+    <main class="join-main">
+        <section class="page-heading">
+            <h1>Membership Application</h1>
+        </section>
+
+        <div class="join-layout">
+            <form action="thankyou.html" method="get" class="join-form">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    
+                    <label>
+                        First Name*
+                        <input type="text" name="fname" id="fname" required autocomplete="given-name" title="Applicant's given or first name">
+                    </label>
+
+                    <label>
+                        Last Name*
+                        <input type="text" name="lname" id="lname" required autocomplete="family-name" title="Applicant's family or last name">
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input type="text" name="orgtitle" id="orgtitle" autocomplete="organization-title" title="Title within organization (at least 7 characters, letters, spaces, hyphens)" pattern="[A-Za-z\s\-]{7,}">
+                    </label>
+
+                    <label>
+                        Email Address*
+                        <input type="email" name="email" id="email" required autocomplete="email" placeholder="example@domain.com" title="Primary business email address">
+                    </label>
+
+                    <label>
+                        Mobile Phone*
+                        <input type="tel" name="phone" id="phone" required autocomplete="tel" title="Applicant's mobile phone number">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Organization & Tier</legend>
+
+                    <label>
+                        Business / Organization Name*
+                        <input type="text" name="organization" id="organization" required autocomplete="organization" title="Official registered business or organization name">
+                    </label>
+
+                    <label>
+                        Membership Level*
+                        <select name="membership" id="membership" required title="Select desired membership tier">
+                            <option value="" disabled selected>Select a membership level...</option>
+                            <option value="np">NP Membership (Non-Profit - Free)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business / Organization Description
+                        <textarea name="description" id="description" rows="4" title="Brief summary of your organization's mission or services"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+
+                <input type="submit" value="Complete Application" class="submit-btn">
+            </form>
+
+            <section class="cards-section" aria-label="Membership Level Cards">
+                <h2>Membership Tiers</h2>
+                <div class="cards-grid">
+                    <article class="tier-card np-card">
+                        <h3>NP Membership</h3>
+                        <p class="tier-price">Free</p>
+                        <button type="button" class="open-modal-btn" data-modal="modal-np">Level Details</button>
+                    </article>
+
+                    <article class="tier-card bronze-card">
+                        <h3>Bronze Membership</h3>
+                        <p class="tier-price">$250 / year</p>
+                        <button type="button" class="open-modal-btn" data-modal="modal-bronze">Level Details</button>
+                    </article>
+
+                    <article class="tier-card silver-card">
+                        <h3>Silver Membership</h3>
+                        <p class="tier-price">$500 / year</p>
+                        <button type="button" class="open-modal-btn" data-modal="modal-silver">Level Details</button>
+                    </article>
+
+                    <article class="tier-card gold-card">
+                        <h3>Gold Membership</h3>
+                        <p class="tier-price">$1,000 / year</p>
+                        <button type="button" class="open-modal-btn" data-modal="modal-gold">Level Details</button>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+
+        <dialog id="modal-np" class="benefits-modal">
+            <div class="modal-content">
+                <h3>NP Membership Benefits</h3>
+                <p>Designed for registered non-profit and community organizations.</p>
+                <ul>
+                    <li>Directory listing in the business directory.</li>
+                    <li>Access to chamber networking events and mixers.</li>
+                    <li>Community bulletin access.</li>
+                </ul>
+                <button type="button" class="close-modal-btn">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-bronze" class="benefits-modal">
+            <div class="modal-content">
+                <h3>Bronze Membership Benefits</h3>
+                <p>Ideal for solo entrepreneurs and starting small businesses.</p>
+                <ul>
+                    <li>All NP Tier benefits.</li>
+                    <li>10% discount on chamber-hosted training seminars.</li>
+                    <li>Social media welcome highlight upon joining.</li>
+                </ul>
+                <button type="button" class="close-modal-btn">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-silver" class="benefits-modal">
+            <div class="modal-content">
+                <h3>Silver Membership Benefits</h3>
+                <p>For growing companies needing stronger marketing exposure.</p>
+                <ul>
+                    <li>All Bronze Tier benefits.</li>
+                    <li>Eligible for Home Page Spotlight rotation.</li>
+                    <li>25% discount on event booths and sponsorship opportunities.</li>
+                    <li>Access to quarterly business roundtable discussions.</li>
+                </ul>
+                <button type="button" class="close-modal-btn">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-gold" class="benefits-modal">
+            <div class="modal-content">
+                <h3>Gold Membership Benefits</h3>
+                <p>Premium tier offering maximum visibility and influence in Quito.</p>
+                <ul>
+                    <li>All Silver Tier benefits.</li>
+                    <li>Priority placement on Home Page Business Spotlights.</li>
+                    <li>Free annual booth at the Quito Business Expo.</li>
+                    <li>Direct sponsorship placement in quarterly email newsletters.</li>
+                    <li>VIP invitation to Executive Board strategy dinners.</li>
+                </ul>
+                <button type="button" class="close-modal-btn">Close</button>
+            </div>
+        </dialog>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <section>
+                <h2>Quito Chamber of Commerce</h2>
+                <address>
+                    Av. República 123<br>
+                    Quito, Ecuador<br>
+                    info@quitochamber.example<br>
+                    +593 2 555-0182
+                </address>
+            </section>
+
+            <div class="social-links">
+                <a href="#" aria-label="YouTube">▶</a>
+                <a href="#" aria-label="X / Twitter">𝕏</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+            </div>
+
+            <section>
+                <h2>WDD231 Class Project</h2>
+                <p>Dylan Zurita</p>
+                <p>© <span id="current-year"></span> Quito Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>

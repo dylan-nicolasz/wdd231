@@ -29,7 +29,6 @@ body.dark-theme {
     --footer-bg: #202e35;
 }
 
-/* Header & Navigation */
 .site-header {
     min-height: 70px;
     background: var(--header-bg);
@@ -106,14 +105,14 @@ body.dark-theme {
     color: #17232a;
 }
 
-/* Main Layout */
+
 main.home-main {
     width: min(100% - 2rem, 1200px);
     margin: 0 auto;
     padding: 1rem 0 2rem;
 }
 
-/* Hero & CTA */
+
 .hero-section {
     position: relative;
     margin-bottom: 1.5rem;
@@ -162,7 +161,7 @@ main.home-main {
     background: #f5bc4e;
 }
 
-/* Cards & Sections */
+
 .events-section,
 .weather-section,
 .spotlight-section {
@@ -200,7 +199,7 @@ main.home-main {
     margin: 0.2rem 0;
 }
 
-/* Weather Elements */
+
 .weather-current {
     display: flex;
     align-items: center;
@@ -243,7 +242,7 @@ main.home-main {
     font-weight: 700;
 }
 
-/* Member Spotlights */
+
 .spotlight-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -314,7 +313,7 @@ main.home-main {
     color: var(--muted);
 }
 
-/* Footer */
+
 .site-footer {
     background: var(--footer-bg);
     border-top: 1px solid var(--border);

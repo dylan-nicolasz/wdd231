@@ -1,5 +1,5 @@
 @media (min-width: 640px) {
-    .site-header {
+     .site-header {
         grid-template-columns: auto 1fr auto;
         padding: 0.7rem 2rem;
     }
@@ -28,33 +28,16 @@
         grid-column: 3;
         grid-row: 1;
     }
-
-
-    main.home-main {
-        width: min(100% - 4rem, 1200px);
-        padding-top: 0.7rem;
-    }
-
-    .hero-image {
-        height: 380px;
-    }
-
-    .home-grid {
+    .join-layout {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-        margin-bottom: 1.5rem;
+        grid-template-columns: 1.6fr 1fr;
+        align-items: start;
+        gap: 2rem;
     }
 
-    .events-section,
-    .weather-section {
-        margin-bottom: 0;
+    .cards-grid {
+        grid-template-columns: 1fr;
     }
-
-    .spotlight-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
 
     .footer-content {
         width: min(100% - 4rem, 1200px);
