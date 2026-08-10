@@ -27,6 +27,19 @@ body.dark-theme {
     --border: #46555d;
     --header-bg: #202e35;
     --footer-bg: #202e35;
+    --header-text: #ffffff;
+}
+
+.brand,
+.brand strong,
+.brand small,
+.menu-button,
+.theme-button {
+    color: var(--header-text) !important;
+}
+
+body.dark-theme .site-nav a {
+    color: var(--header-text);
 }
 
 .site-header {
