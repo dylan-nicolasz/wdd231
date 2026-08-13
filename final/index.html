@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Condor 0°</title>
+  <meta name="description" content="Condor 0° is a simple Ecuador travel guide for discovering destinations, regions, and travel ideas.">
+  <meta name="author" content="Dylan Zurita">
+  <meta property="og:title" content="Home | Condor 0°">
+  <meta property="og:description" content="Condor 0° is a simple Ecuador travel guide for discovering destinations, regions, and travel ideas.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=70">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Condor 0 degrees home">
+      <span class="brand-mark" aria-hidden="true">0°</span>
+      <span>CONDOR 0°</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" data-page="index">Home</a>
+      <a href="destinations.html" data-page="destinations">Destinations</a>
+      <a href="plan.html" data-page="plan">Plan Your Trip</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-content">
+    <h1>Discover Ecuador</h1>
+    <p>From the Andes to the Amazon, from the coast to the Galápagos, find a place worth remembering.</p>
+    <a class="btn" href="destinations.html">Explore Destinations</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Featured Destinations</h2>
+      <p>A few places to start your Ecuador adventure.</p>
+    </div>
+    <div id="featured" class="cards" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Explore by Region</h2>
+      <p>Choose a region and see what Ecuador has to offer.</p>
+    </div>
+    <div class="region-grid">
+      <a class="region" href="destinations.html?region=Sierra">Sierra</a>
+      <a class="region" href="destinations.html?region=Coast">Coast</a>
+      <a class="region" href="destinations.html?region=Amazon">Amazon</a>
+      <a class="region" href="destinations.html?region=Galápagos">Galápagos</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h2>CONDOR 0°</h2>
+      <p>Flying Over Ecuador.</p>
+    </div>
+    <div>
+      <h2>Explore</h2>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="plan.html">Plan Your Trip</a>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <p>info@condor0.com</p>
+      <p>Ecuador</p>
+    </div>
+  </div>
+  <div class="copyright">© 2026 Condor 0°. All rights reserved.</div>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

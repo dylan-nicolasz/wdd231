@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "name": "Quilotoa Lagoon",
+    "region": "Sierra",
+    "type": "Nature",
+    "province": "Cotopaxi",
+    "bestTime": "June–September",
+    "cost": "$20–$40",
+    "image": "images/destination-1.svg",
+    "description": "A turquoise volcanic lagoon surrounded by high Andean landscapes."
+  },
+  {
+    "id": 2,
+    "name": "Baños de Agua Santa",
+    "region": "Sierra",
+    "type": "Adventure",
+    "province": "Tungurahua",
+    "bestTime": "June–September",
+    "cost": "$30–$70",
+    "image": "images/destination-2.svg",
+    "description": "A mountain town known for waterfalls, viewpoints, and outdoor adventures."
+  },
+  {
+    "id": 3,
+    "name": "Cotopaxi National Park",
+    "region": "Sierra",
+    "type": "Hiking",
+    "province": "Cotopaxi",
+    "bestTime": "June–September",
+    "cost": "$10–$30",
+    "image": "images/destination-3.svg",
+    "description": "A high-altitude park centered around the iconic Cotopaxi volcano."
+  },
+  {
+    "id": 4,
+    "name": "Mindo",
+    "region": "Sierra",
+    "type": "Wildlife",
+    "province": "Pichincha",
+    "bestTime": "June–October",
+    "cost": "$25–$60",
+    "image": "images/destination-4.svg",
+    "description": "A cloud-forest destination famous for birds, butterflies, and waterfalls."
+  },
+  {
+    "id": 5,
+    "name": "Quito Historic Center",
+    "region": "Sierra",
+    "type": "Culture",
+    "province": "Pichincha",
+    "bestTime": "June–September",
+    "cost": "$20–$50",
+    "image": "images/destination-5.svg",
+    "description": "A historic city center filled with plazas, churches, museums, and local culture."
+  },
+  {
+    "id": 6,
+    "name": "Mitad del Mundo",
+    "region": "Sierra",
+    "type": "Culture",
+    "province": "Pichincha",
+    "bestTime": "June–September",
+    "cost": "$10–$25",
+    "image": "images/destination-6.svg",
+    "description": "A popular destination near Quito connected with Ecuador's equatorial identity."
+  },
+  {
+    "id": 7,
+    "name": "Montañita",
+    "region": "Coast",
+    "type": "Beach",
+    "province": "Santa Elena",
+    "bestTime": "December–May",
+    "cost": "$30–$80",
+    "image": "images/destination-7.svg",
+    "description": "A lively coastal town with beaches, sunsets, and a relaxed atmosphere."
+  },
+  {
+    "id": 8,
+    "name": "Puerto López",
+    "region": "Coast",
+    "type": "Wildlife",
+    "province": "Manabí",
+    "bestTime": "June–October",
+    "cost": "$30–$70",
+    "image": "images/destination-8.svg",
+    "description": "A coastal base for exploring beaches and seasonal marine wildlife."
+  },
+  {
+    "id": 9,
+    "name": "Los Frailes Beach",
+    "region": "Coast",
+    "type": "Beach",
+    "province": "Manabí",
+    "bestTime": "June–December",
+    "cost": "$15–$40",
+    "image": "images/destination-9.svg",
+    "description": "A scenic protected beach with clear water and natural surroundings."
+  },
+  {
+    "id": 10,
+    "name": "Cajas National Park",
+    "region": "Sierra",
+    "type": "Hiking",
+    "province": "Azuay",
+    "bestTime": "June–September",
+    "cost": "$10–$30",
+    "image": "images/destination-10.svg",
+    "description": "A dramatic highland landscape of lakes, hills, and hiking trails near Cuenca."
+  },
+  {
+    "id": 11,
+    "name": "Cuenca",
+    "region": "Sierra",
+    "type": "Culture",
+    "province": "Azuay",
+    "bestTime": "June–September",
+    "cost": "$25–$60",
+    "image": "images/destination-11.svg",
+    "description": "A charming Andean city known for architecture, food, crafts, and history."
+  },
+  {
+    "id": 12,
+    "name": "Yasuní National Park",
+    "region": "Amazon",
+    "type": "Wildlife",
+    "province": "Orellana",
+    "bestTime": "August–November",
+    "cost": "$80–$180",
+    "image": "images/destination-12.svg",
+    "description": "A biodiverse Amazonian destination with rainforest and wildlife experiences."
+  },
+  {
+    "id": 13,
+    "name": "Tena",
+    "region": "Amazon",
+    "type": "Adventure",
+    "province": "Napo",
+    "bestTime": "August–November",
+    "cost": "$35–$90",
+    "image": "images/destination-13.svg",
+    "description": "An Amazon gateway offering river adventures, caves, and jungle experiences."
+  },
+  {
+    "id": 14,
+    "name": "Cuyabeno Wildlife Reserve",
+    "region": "Amazon",
+    "type": "Wildlife",
+    "province": "Sucumbíos",
+    "bestTime": "December–March",
+    "cost": "$90–$180",
+    "image": "images/destination-14.svg",
+    "description": "A rainforest reserve with waterways, lagoons, and abundant wildlife."
+  },
+  {
+    "id": 15,
+    "name": "San Cristóbal Island",
+    "region": "Galápagos",
+    "type": "Wildlife",
+    "province": "Galápagos",
+    "bestTime": "December–May",
+    "cost": "$120–$250",
+    "image": "images/destination-15.svg",
+    "description": "A Galápagos island offering wildlife, beaches, and coastal landscapes."
+  },
+  {
+    "id": 16,
+    "name": "Isabela Island",
+    "region": "Galápagos",
+    "type": "Adventure",
+    "province": "Galápagos",
+    "bestTime": "December–May",
+    "cost": "$120–$250",
+    "image": "images/destination-16.svg",
+    "description": "A large volcanic island with snorkeling, wildlife, and outdoor activities."
+  },
+  {
+    "id": 17,
+    "name": "Santa Cruz Island",
+    "region": "Galápagos",
+    "type": "Nature",
+    "province": "Galápagos",
+    "bestTime": "December–May",
+    "cost": "$120–$250",
+    "image": "images/destination-17.svg",
+    "description": "A popular Galápagos destination with beaches, wildlife, and visitor services."
+  },
+  {
+    "id": 18,
+    "name": "Chimborazo Reserve",
+    "region": "Sierra",
+    "type": "Adventure",
+    "province": "Chimborazo",
+    "bestTime": "June–September",
+    "cost": "$15–$40",
+    "image": "images/destination-18.svg",
+    "description": "High Andean scenery surrounding Ecuador's famous Chimborazo volcano."
+  },
+  {
+    "id": 19,
+    "name": "Vilcabamba",
+    "region": "Sierra",
+    "type": "Relaxation",
+    "province": "Loja",
+    "bestTime": "June–September",
+    "cost": "$25–$60",
+    "image": "images/destination-19.svg",
+    "description": "A peaceful valley destination surrounded by green mountains and trails."
+  },
+  {
+    "id": 20,
+    "name": "Guayaquil",
+    "region": "Coast",
+    "type": "City",
+    "province": "Guayas",
+    "bestTime": "June–November",
+    "cost": "$25–$60",
+    "image": "images/destination-20.svg",
+    "description": "Ecuador's largest coastal city with parks, river views, food, and urban culture."
+  }
+]

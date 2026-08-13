@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675">
+<rect width="900" height="675" fill="#dbeaf0"/><circle cx="720" cy="115" r="52" fill="#f3cf64"/><path d="M0 420 L170 220 L270 340 L410 150 L560 350 L710 200 L900 410 V675 H0Z" fill="#6b8e9b"/><path d="M0 470 Q220 400 420 480 T900 455 V675 H0Z" fill="#8fbf88"/><path d="M0 520 Q260 455 480 525 T900 505" fill="none" stroke="#6b7b63" stroke-width="20" opacity=".7"/>
+<rect x="28" y="28" width="844" height="619" rx="22" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="4"/>
+<rect x="45" y="535" width="810" height="92" rx="14" fill="#ffffff" opacity=".88"/>
+<text x="70" y="578" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1b5e20">Cotopaxi National Park</text>
+<text x="70" y="610" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#263238">Condor 0° • Sierra</text>
+</svg>

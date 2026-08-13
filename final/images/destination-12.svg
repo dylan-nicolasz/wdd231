@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675">
+<rect width="900" height="675" fill="#c9e8bd"/><circle cx="700" cy="120" r="55" fill="#f4d36a"/><path d="M0 400 Q80 270 160 410 Q250 210 350 410 Q450 250 540 410 Q650 190 760 410 Q830 260 900 410 V675 H0Z" fill="#4f9561"/><rect y="430" width="900" height="245" fill="#7fb36a"/><path d="M120 675 Q280 500 430 675 M650 675 Q520 510 410 675" fill="none" stroke="#7fb36a" stroke-width="34"/>
+<rect x="28" y="28" width="844" height="619" rx="22" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="4"/>
+<rect x="45" y="535" width="810" height="92" rx="14" fill="#ffffff" opacity=".88"/>
+<text x="70" y="578" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1b5e20">Yasuní National Park</text>
+<text x="70" y="610" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#263238">Condor 0° • Amazon</text>
+</svg>

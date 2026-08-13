@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Your Trip | Condor 0°</title>
+  <meta name="description" content="Share your travel preferences and create a simple Ecuador trip idea with Condor 0°.">
+  <meta name="author" content="Dylan Zurita">
+  <meta property="og:title" content="Plan Your Trip | Condor 0°">
+  <meta property="og:description" content="Share your travel preferences and create a simple Ecuador trip idea with Condor 0°.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=70">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/plan.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Condor 0 degrees home">
+      <span class="brand-mark" aria-hidden="true">0°</span>
+      <span>CONDOR 0°</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" data-page="index">Home</a>
+      <a href="destinations.html" data-page="destinations">Destinations</a>
+      <a href="plan.html" data-page="plan">Plan Your Trip</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="container">
+    <h1>Plan Your Trip</h1>
+    <p>Tell us what kind of Ecuador experience you are looking for.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <form class="form" action="form-action.html" method="get">
+      <div class="form-grid">
+        <div>
+          <label for="name">Name</label>
+          <input class="field" id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input class="field" id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="region">Preferred region</label>
+          <select class="field" id="region" name="region" required>
+            <option value="">Choose one</option>
+            <option>Sierra</option><option>Coast</option><option>Amazon</option><option>Galápagos</option>
+          </select>
+        </div>
+        <div>
+          <label for="experience">Experience</label>
+          <select class="field" id="experience" name="experience" required>
+            <option value="">Choose one</option>
+            <option>Nature</option><option>Adventure</option><option>Beach</option><option>Culture</option><option>Wildlife</option>
+          </select>
+        </div>
+        <div>
+          <label for="date">Travel date</label>
+          <input class="field" id="date" name="date" type="date" required>
+        </div>
+        <div>
+          <label for="travelers">Travelers</label>
+          <input class="field" id="travelers" name="travelers" type="number" min="1" max="20" value="1" required>
+        </div>
+        <div class="full">
+          <label for="notes">What are you hoping to do?</label>
+          <textarea class="field" id="notes" name="notes" placeholder="Tell us a little about your trip..."></textarea>
+        </div>
+        <div class="full">
+          <p class="form-note">This is a class project form. No real booking is made.</p>
+          <button class="btn secondary" type="submit">Submit My Plan</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h2>CONDOR 0°</h2>
+      <p>Flying Over Ecuador.</p>
+    </div>
+    <div>
+      <h2>Explore</h2>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="plan.html">Plan Your Trip</a>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <p>info@condor0.com</p>
+      <p>Ecuador</p>
+    </div>
+  </div>
+  <div class="copyright">© 2026 Condor 0°. All rights reserved.</div>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
