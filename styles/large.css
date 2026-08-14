@@ -1,0 +1,65 @@
+@media screen and (min-width: 650px) {
+    /* Header layout adjustments */
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        padding: 10px 20px;
+    }
+
+    #menu-btn {
+        display: none; /* Hide hamburger icon on larger views */
+    }
+
+    nav {
+        display: block; /* Always show horizontal nav */
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    nav ul li {
+        flex: 1;
+    }
+
+    nav ul li a {
+        text-align: center;
+        border-bottom: none;
+        border-right: 1px solid var(--secondary-color);
+    }
+
+    /* Main Grid Layout matching wireframe */
+    .cards-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "about photo"
+            "courses courses";
+        gap: 20px;
+    }
+
+    .about-card {
+        grid-area: about;
+    }
+
+    .photo-card {
+        grid-area: photo;
+    }
+
+    .courses-card-container {
+        grid-area: courses;
+    }
+
+    /* Course Display Cards Grid */
+    .courses-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}

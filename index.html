@@ -6,72 +6,88 @@
     <meta name="author" content="Dylan Zurita">
     <meta name="description" content="I'm Dylan Zurita and this is a page I created to introduce myself and my interests."> 
     <meta property="og:title" content="About Me (Dylan Zurita)">
-    <meta property="og:description" content="I created this page as an introduction of me, where I live, my studies, and my projects, everyone is welcome to check the page and to check my sites.">
-    <meta property="og:image" content="">
+    <meta property="og:description" content="I created this page as an introduction of me, where I live, my studies, and my projects.">
+    <meta property="og:image" content="images/me-dylan.jpg">
     <title>WDD 231 – Web Frontend Development 1 – Dylan Zurita</title>
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@379&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
 <header>
-    <span id="course-title">Dylan Zurita</span>
+    <img src="images/logo-index.png" alt="site-logo">
+    <button id="menu-btn" aria-label="Toggle Menu">☰</button>
 
-        <img src="images/logo-index.png" alt="me-logo">
-        <button id="menu-btn" aria-label="Menu"> ☰ </button>
-
-        <nav>
-            <ul class="navigation">
-                <li> <a href="" title="Home">Home</a></li>
-                <li> <a href="" title="Canvas">Chamber Project </a></li>
-                <li> <a href="" title="Scripture">Final Project</a></li>
-            </ul>
-        </nav>
+    <nav id="primary-nav">
+        <ul class="navigation">
+            <li><a href="#" class="active" title="Home">Home</a></li>
+            <li><a href="chamber/index.html" title="Chamber Project">Chamber Project</a></li>
+            <li><a href="final/index.html" title="Final Project">Final Project</a></li>
+        </ul>
+    </nav>
 </header>
 
-    <main>
+<main>
     <h1 class="name">Home</h1>
     <div class="cards-container">
-        <section class="card">
-            <h2 class="about-me">About Me</h2>
 
-            <p>I'm Dylan. I was born and raised in Ecuador. I love my country and the food.
-            Right now I'm a student at BYUI, pursuing a carreer in software development.
-            I love playing the guitar and playing ping pong.
+        <section class="card about-card">
+            <h2 class="about-me">About Me</h2>
+            <p>
+                I'm Dylan. I was born and raised in Ecuador. I love my country and the food.
+                Right now I'm a student at BYUI, pursuing a career in software development.
+                I love playing the guitar and playing ping pong.
             </p>
         </section>
 
-        <section class="card">
-            <h2 class="web-dev"> Student Photo</h2>
-            <img src="images/me-dylan.jpg" alt="Me">
+
+        <section class="card photo-card">
+            <h2 class="web-dev">Student Photo</h2>
+            <img src="images/me-dylan.jpg" alt="Dylan Zurita Photo" loading="lazy">
         </section>
 
-        <section>
+
+        <section class="courses-card-container">
             <h2 class="courses-card">Web Certificate Courses</h2>
-            <a id="bookbtn" href="book.html" title="All">All</a>
-            <a id="bookbtn" href="book.html" title="WDD">WDD</a>
-            <a id="bookbtn" href="book.html" title="CSE">cse</a>
+            
+            <div class="filter-buttons">
+                <button id="all-btn" class="filter-btn">All</button>
+                <button id="cse-btn" class="filter-btn">CSE</button>
+                <button id="wdd-btn" class="filter-btn">WDD</button>
+            </div>
+
+            <div id="courses-container" class="courses-list"></div>
+
+
+            <p id="total-credits"></p>
         </section>
     </div>
 </main>
 
 <footer>
-
-    <section>
-        <a href="https://www.linkedin.com/in/dylan-zurita-8985153b8/">
-            <img src="images/in-logo.jpg" alt="linkedin">
+    <section class="social-links">
+        <a href="https://www.linkedin.com/in/dylan-zurita-8985153b8/" target="_blank" rel="noopener">
+            <img src="images/in-logo.jpg" alt="LinkedIn Profile">
         </a>
-        <a href="https://github.com/dylan-nicolasz">
-            <img src="images/git-logo.png" alt="github">
+        <a href="https://github.com/dylan-nicolasz" target="_blank" rel="noopener">
+            <img src="images/git-logo.png" alt="GitHub Profile">
         </a>
-        <a href="https://dylan-nicolasz.github.io/wdd131/project/main.html">
-            <img src="images/profbook.avif" alt="profbook-page">
+        <a href="https://dylan-nicolasz.github.io/wdd131/project/main.html" target="_blank" rel="noopener">
+            <img src="images/profbook.avif" alt="WDD 131 Project">
         </a>
     </section>
+
     <p>
-        &copy; <span id="year"></span>- Dylan Zurita - Quito-Ecuador
+        &copy; <span id="currentyear"></span> • Dylan Zurita • Quito, Ecuador
     </p>
-    <p id="last-modified"></p>
+    <p id="lastModified"></p>
 </footer>
 </body>
 </html>

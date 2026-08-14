@@ -1,0 +1,206 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    padding: 0 10px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: black;
+    border-bottom: 1px solid #ccc;
+}
+
+header img {
+    height: 199px;
+    width: auto;
+    
+}
+
+#course-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+#menu-btn {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+
+nav {
+    display: none;
+    width: 100%;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    background-color: black;
+}
+
+nav ul li a {
+    display: block;
+    font-family: "Montserrat";
+    color: rgb(242, 242, 243);
+    text-decoration: none;
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: white;
+    font-weight: bold;
+    color:   rgb(106, 114, 233);
+}
+    main {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+h1.name {
+    font-family: "Montserrat";
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card, .courses-card-container {
+    border: 2px solid #000000;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card h2, .courses-card-container h2 {
+    text-align: center;
+    padding: 10px;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+}
+
+.card p {
+    padding: 15px;
+    font-family: "Montserrat";
+}
+
+.card img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 4px;
+}
+
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 10px 10px;
+    gap: 10px;
+    font-family: "Montserrat";
+}
+
+.filter-btn {
+    flex: 1;
+    padding: 8px 12px;
+    background-color: white;
+    border: 1px solid rgb(207, 199, 199);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.filter-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.course-card {
+    border: 3px solid #aaa;
+    padding: 12px;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+
+.course-card.completed {
+    border-color:  rgb(106, 114, 233);
+}
+
+#total-credits {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+}
+
+footer section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+footer section img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+footer section img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    font-family: "Montserrat";
+}
